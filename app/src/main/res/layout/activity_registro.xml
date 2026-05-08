@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondologin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".registroActivity">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/coustom_edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="#56873C"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Nombre (s)"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="#56873C"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtApeP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Apellido Paterno"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="#56873C"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtApeM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Apellido Materno"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="#56873C"
+                app:startIconDrawable="@drawable/baseline_calendar_month_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="none"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:focusable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp">
+
+                <RadioButton
+                    android:id="@+id/txtH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawableLeft="@drawable/baseline_boy_24"
+                    android:drawablePadding="1dp"
+                    android:ems="10"
+                    android:hint="Masculino"
+                    android:textColorHint="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/txtM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawableLeft="@drawable/baseline_girl_24"
+                    android:drawablePadding="1dp"
+                    android:ems="10"
+                    android:hint="Femenino"
+                    android:textColorHint="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/txtN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="1dp"
+                    android:ems="10"
+                    android:hint="       Prefiero no decirlo"
+                    android:textColorHint="@color/black"/>
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="#56873C"
+                app:startIconDrawable="@drawable/baseline_contact_mail_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Correo"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconTint="#56873C"
+                app:startIconTint="#56873C"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconTint="#56873C"
+                app:startIconTint="#56873C"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/coustom_edittext"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Confirma contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/cardview_dark_background"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Elije una foto de perfil"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_1"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_1"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="15dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_4"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_4"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="3dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_5"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_5"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="3dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_7"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_7"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_2"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_2"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="15dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_3"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_3"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="3dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_6"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_6"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="3dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_8"
+                    android:layout_width="170px"
+                    android:layout_height="170px"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person_8"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="3dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/green"
+                android:text="Crear cuenta"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/btnYa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="¿Ya tienes cuenta?"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

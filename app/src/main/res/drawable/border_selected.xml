@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#56873C"/> <!-- Cambia esto al color que desees para el marco -->
+        <stroke android:width="16dp" android:color="#FFFFFF"/> <!-- Grosor y color del borde -->
+    </shape>
+</selector>

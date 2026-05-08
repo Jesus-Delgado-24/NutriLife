@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iVFotoPer_Publi"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person_1"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/iVFotoPer_Publi"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/iVFotoPer_Publi"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/lblNom_Publi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Nombre"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/lblUsu_Publi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:textColor="#AFAAAA"
+                    android:textSize="10dp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/lblFecha_Publi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Fecha"
+                    android:textColor="#706E6E"
+                    android:textSize="15dp"
+                    android:textStyle="italic|normal"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnMenuPubli"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/drawable_btneditper"
+                android:src="@drawable/baseline_menu_24"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="-5dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lblDes_Publi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Descripcion"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_publi"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/lblCountLike_Publi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"/>
+
+            <ImageButton
+                android:id="@+id/btnLike_Publi"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/ig_borderlik"
+                android:background="@drawable/drawable_btneditper"
+                android:scaleType="fitCenter"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/lblCountCome_Publi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="1dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/btnComentar_Publi"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:backgroundTint="@color/black"
+                android:text="Comentar"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

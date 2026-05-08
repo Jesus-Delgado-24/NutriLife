@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Cuando el ImageView está presionado -->
+        <item android:drawable="@drawable/border_selected" android:state_pressed="true"/>
+        <!-- Cuando el ImageView está enfocado -->
+        <item android:drawable="@drawable/border_selected" android:state_focused="true"/>
+        <!-- Cuando el ImageView está seleccionado -->
+        <item android:drawable="@drawable/border_selected" android:state_selected="true"/>
+        <!-- Cuando el ImageView está deseleccionado -->
+        <item android:drawable="@android:color/transparent"/>
+    </selector>
+</selector>

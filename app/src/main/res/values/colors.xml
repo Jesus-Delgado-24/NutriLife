@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#488D3C</color>
+    <color name="item_sele">#FFB8ECAF</color>
+    <color name="yellow">#FFC107</color>
+    <color name="red">#FF0000</color>
+    <color name="green_ok">#4CAF50</color>
+    <color name="neutral">#514E4E</color>
+    <color name="fondo_perfil">#B3E8B0</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="editper">#A2DA8D</color>
+    <color name="disable">#5E5E5E</color>
+</resources>

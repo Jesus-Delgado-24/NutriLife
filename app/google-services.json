@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "618482555152",
+    "project_id": "nutrilife-ada20",
+    "storage_bucket": "nutrilife-ada20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618482555152:android:0384efc23fe4b936adad95",
+        "android_client_info": {
+          "package_name": "com.example.nutrilife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCcFB3CS88N1-JEcyACy2EMDcWVNkCQJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
