@@ -15,7 +15,7 @@ Este proyecto fue desarrollado originalmente en 2024 para demostrar la integraci
 
 ## 🛠️ Stack Tecnológico
 
-- **Plataforma:** Android Studio (Java/Kotlin).
+- **Plataforma:** Android Studio (Java).
 - **Backend & Base de Datos:** [Firebase Realtime Database / Firestore] - Gestión de datos de usuarios y posts en tiempo real.
 - **Autenticación:** Firebase Authentication - Manejo de sesiones y seguridad de cuentas.
 - **Almacenamiento de Medios:** Firebase Storage - Guardado y recuperación eficiente de imágenes de perfil y publicaciones.
